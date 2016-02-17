@@ -1,0 +1,32 @@
+{
+  "name": "rabbitmq-zabbix-sender",
+  "version": "0.0.6",
+  "license": "GPL-3.0",
+  "main": "./bin/index.js",
+  "description": "Poll for RabbitMQ status and push to Zabbix using zabix_sender",
+  "author": {
+    "name": "Mohamad Alamili",
+    "url": "https://github.com/sysunite/rabbitmq-zabbix-sender",
+    "email": "mohamad@sysunite.com"
+  },
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sysunite/rabbitmq-zabbix-sender"
+  },
+  "dependencies": {
+    "coffee-script": "^1.9.3",
+    "request": "^2.69.0"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "start": "node ./bin/index.js",
+    "postinstall": "./node_modules/coffee-script/bin/coffee -o lib -c src",
+    "prepublish": "./node_modules/coffee-script/bin/coffee -o lib -c src"
+  },
+  "bin": {
+    "rabbitmq-zabbix-sender": "./bin/index.js"
+  }
+}

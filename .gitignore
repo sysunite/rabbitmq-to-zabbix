@@ -1,0 +1,6 @@
+.DS_Store
+.name
+.idea
+node_modules
+pipemail_config
+lib
