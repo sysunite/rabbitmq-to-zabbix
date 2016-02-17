@@ -1,5 +1,6 @@
 # rabbitmq-to-zabbix
-Node script to poll for RabbitMQ status and push to Zabbix using zabix_sender
+Node script to poll for RabbitMQ status and push to Zabbix using zabbix_sender.
+Note that zabbix_sender must be installed on the system.
 
 ## Installation on Ubuntu 14.04
 
